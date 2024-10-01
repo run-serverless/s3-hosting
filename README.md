@@ -1,6 +1,8 @@
 # S3 Hosting Setup
 
-Deploy infrastructure to host a static website on AWS S3. Includes setting up:
+Deploy infrastructure to host a static website on AWS S3 using the [Serverless Framework V3](https://www.serverless.com/).
+
+Includes setting up:
 
 - S3 bucket to host the website
 - CloudFront (CDN) distribution to serve the website
@@ -14,9 +16,17 @@ Domain name must be registered and managed in Route 53.
 - AWS account
 - Domain name registered in Route 53 with a Hosted Zone
 - AWS CLI installed and configured with credentials
-- A centralised Serverless Framework deployment bucket using the format `<aws-account-id>--serverless-deploys`
+- A centralised Serverless Framework deployment S3 bucket using the format `<aws-account-id>--serverless-deploys`
 
 Replace `<aws-account-id>` with your AWS account ID.
+
+## Installation
+
+Install the Serverless Framework and application dependencies.
+
+```
+npm install
+```
 
 ## Usage
 
